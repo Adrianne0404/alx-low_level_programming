@@ -1,20 +1,17 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 
 /**
- * main - Print alphabets in lower case using putchar
+ * main - prints the alphabet in lowercase,
+ * followed by a new line
  * Return: Always (0) Success
  */
-
 int main(void)
 {
-	char c = 'a';
+	char ch;
 
-	while (c < = 'z')
+	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		putchar(c);
-		c++;
+		putchar(ch);
 	}
 	putchar('\n');
 	return (0);
