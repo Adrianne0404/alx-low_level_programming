@@ -4,6 +4,8 @@
 	/**
 	 * print alphabet x10 - prints 10 times the alphabet, in lowercase,
 	 * followed by a new line
+	 *
+	 * Description: prints 10 times the alphabet
 	 */
 	void print_alphabet_x10(void)
 	{
