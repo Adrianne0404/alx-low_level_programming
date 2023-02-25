@@ -1,25 +1,20 @@
 #include "main.h"
 
 /**
- *print_line = d function that raws a straight line in the terminal
- *@n: input number of times to print '_'
- *Return: a straight line
+ * print_line -  checks for checks for a digit (0 through 9).
+ * @n: n -  Variable
+ * Return: Always 0.
  */
 void print_line(int n)
 {
-	int co;
+	int x;
 
-	if (n <= 0)
+	if (n > 0)
 	{
-		_putchar('\n');
-	}
-	else
-	{
-		for (co = 1; co <= n; co++)
+		for (x = 1; x <= n; x++)
 		{
-			_putchar('_');
+			_putchar(95);
 		}
-		_putchar('\n');
-
 	}
+	_putchar('\n');
 }
