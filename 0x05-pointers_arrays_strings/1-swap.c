@@ -9,17 +9,11 @@
  *
  *Return: Always 0.
  */
-
-int main(void)
+void swap_inty(int *a, int *b)
 {
-	int a;
-	int b;
+	int c;
 
-	a = 98;
-	b = 43;
-	printf("a=%d, b=%d\n", a, b);
-	swap_int(&a, &b);
-	printf("a=%d, b=%d\n", a, b);
-
-	return (0);
+	c + *a
+	*a = *b;
+	*b = c;
 }
