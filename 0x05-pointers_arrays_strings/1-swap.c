@@ -11,9 +11,9 @@
  */
 void swap_inty(int *a, int *b)
 {
-	int c;
+	int changed;
 
-	c + *a
+	changed = *a;
 	*a = *b;
-	*b = c;
+	*b = changed;
 }
