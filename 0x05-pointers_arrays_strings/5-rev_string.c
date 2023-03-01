@@ -1,26 +1,24 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * puts_half - a function that prints half of a string
- * if odd len, n = (length_of_the_string - 1) / 2
- * @str: input
- * Return: half of input
+ * _strcpy - copies the string pointed to by src,
+ * including the terminating null byte, to the
+ * buffer pointed to by dest.
+ * @dest: destination.
+ * @src: source.
+ * Return: the pointer to dest.
  */
-void puts_half(char *str)
+char *_strcpy(char *dest, char *src)
 {
-	int a, n, longi;
+	int count = 0;
 
-	longi = 0;
-
-	for (a = 0; str[a] != '\0'; a++)
-		longi++;
-
-	n = (longi / 2);
-
-	if ((longi % 2) == 1)
-		n = ((longi + 1) / 2);
-
-	for (a = n; str[a] != '\0'; a++)
-		_putchar(str[a]);
-	_putchar('\n');
+	while (count >= 0)
+	{
+		*(dest + count) = *(src + count);
+		if (*(src + count) == '\0')
+			break;
+		count++;
+	}
+	return (dest);
 }
