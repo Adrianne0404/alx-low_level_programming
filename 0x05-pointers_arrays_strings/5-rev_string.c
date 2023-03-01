@@ -1,24 +1,30 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * _strcpy - copies the string pointed to by src,
- * including the terminating null byte, to the
- * buffer pointed to by dest.
- * @dest: destination.
- * @src: source.
- * Return: the pointer to dest.
+ * rev_string - reverses a string.
+ * @s: input string.
+ * Return: no return.
  */
-char *_strcpy(char *dest, char *src)
+void rev_string(char *s)
 {
-	int count = 0;
+	int count = 0, i, j;
+	char *str, temp;
 
 	while (count >= 0)
 	{
-		*(dest + count) = *(src + count);
-		if (*(src + count) == '\0')
+		if (s[count] == '\0')
 			break;
 		count++;
 	}
-	return (dest);
+	str = s;
+
+	for (i = 0; i < (count - 1); i++)
+	{
+		for (j = i + 1; j > 0; j--)
+		{
+			temp = *(str + j);
+			*(str + j) = *(str + (j - 1));
+			*(str + (j - 1)) = temp;
+		}
+	}
 }
