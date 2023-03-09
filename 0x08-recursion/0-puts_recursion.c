@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- *_puts_recursion - Main Entry
- *@s: input
+ * _puts_recursion - Main Entry
+ * @s: input
  */
-void_puts_recursion(char *s)
+void _puts_recursion(char *s)
 {
 	if (*(s) != '\0')
 	{
